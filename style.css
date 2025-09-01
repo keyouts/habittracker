@@ -1,1 +1,110 @@
-body { background: #fff; font-family: 'Courier New', monospace; color: #000; padding: 2rem; } h1 { text-transform: uppercase; font-size: 2rem; margin-bottom: 1rem; text-align: center; } .habit-controls { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2rem; } .habit-wrapper { display: flex; align-items: center; gap: 0.5rem; } .habit-btn, .delete-btn { padding: 0.5rem 1rem; border: 2px solid #000; box-shadow: 6px 6px 0 #000; background: #fff; cursor: pointer; font-weight: bold; text-transform: uppercase; } .habit-btn.active { background: #000; color: #fff; } .habit-btn:active, .delete-btn:active { transform: translate(2px, 2px); box-shadow: 4px 4px 0 #000; } .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1rem; max-width: 600px; margin: 0 auto; } .day { padding: 1rem; border: 2px solid #000; box-shadow: 6px 6px 0 #000; background: #fff; cursor: pointer; text-align: center; } .day.checked { background: #000; color: #fff; } .day:active { transform: translate(2px, 2px); box-shadow: 4px 4px 0 #000; } .edit-panel { text-align: center; margin-top: 2rem; } input, button { margin: 0.5rem; padding: 0.5rem; border: 2px solid #000; box-shadow: 4px 4px 0 #000; background: #fff; font-family: inherit; font-weight: bold; button:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #000;
+body {
+  background: #fff;
+  font-family: 'Courier New', monospace;
+  color: #000;
+  padding: 2rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.habit-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.habit-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.habit-btn,
+.delete-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  box-shadow: 6px 6px 0 #000;
+  background: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.habit-btn.active {
+  background: #000;
+  color: #fff;
+}
+
+.habit-btn:active,
+.delete-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0 #000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.day {
+  padding: 1rem;
+  border: 2px solid #000;
+  box-shadow: 6px 6px 0 #000;
+  background: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.day.checked {
+  background: #000;
+  color: #fff;
+}
+
+.day:active {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0 #000;
+}
+
+.edit-panel {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+input,
+button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  background: #fff;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
