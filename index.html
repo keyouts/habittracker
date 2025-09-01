@@ -1,1 +1,32 @@
-<!DOCTYPE html> <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <title>Habit Tracker</title><link rel="stylesheet" href="style.css"/></head> <body> <h1>Habit Tracker</h1> <div class="habit-controls" id="habitControls"></div> <div class="grid" id="grid"></div> <div class="edit-panel"> <input type="text" id="newHabit" placeholder="New or renamed habit"> <button onclick="addHabit()">Add Habit</button> <button onclick="renameHabit()">Rename Habit</button> </div>  <script  src="./script.js"></script></body> </html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main role="main" aria-label="Habit Tracker Application">
+    <h1 id="mainHeading">Habit Tracker</h1>
+
+    <div class="habit-controls" id="habitControls" role="region" aria-label="Habit Controls Panel">
+      <!-- Controls will be dynamically added here -->
+    </div>
+
+    <div class="grid" id="grid" role="table" aria-label="Habit Tracking Grid">
+      <!-- Grid content will be dynamically added here -->
+    </div>
+
+    <div class="edit-panel" role="form" aria-labelledby="editPanelLabel">
+      <h2 id="editPanelLabel" class="visually-hidden">Edit Habit Panel</h2>
+      <label for="newHabit" class="visually-hidden">Enter new or renamed habit</label>
+      <input type="text" id="newHabit" placeholder="New or renamed habit" aria-label="New or renamed habit">
+      <button onclick="addHabit()" aria-label="Add new habit">Add Habit</button>
+      <button onclick="renameHabit()" aria-label="Rename selected habit">Rename Habit</button>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
